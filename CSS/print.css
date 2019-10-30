@@ -4,6 +4,11 @@
     margin: 0em;
 }
 
+html, body
+{
+    margin: auto;
+}
+
 body{
     font-family: "Times New Roman", Times, serif;
 }
@@ -72,11 +77,174 @@ a
     padding-left: 2.5em;
     padding-bottom: 0.3em;
 }
-#footer
+
+/*protagonisti*/
+
+#Hprot
 {
     text-align: center;
+    padding-top: 0.7em;
+    padding-bottom: 0.3em;
+}
+
+#HprotT
+{
+    margin-top: 3.5em;
+    text-align: center;
+}
+
+#protagonisti dt
+{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    margin-left: 6em;
+    margin-right: 6em;
+
+}
+
+#protagonisti dd
+{
+    border: 1px solid black;
+    margin-bottom: 1em;
+    min-height: 5em;
+    text-align: justify;
+    padding-top: 0.6em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 6em;
+    margin-right: 6em;
+
+}
+
+#protagonisti p{
+    page-break-inside: avoid;
+    margin-left: 25%;
+}
+
+#imgRed
+{
+    float: left;
+    width: 15%;
+    margin-left: 1.5em;
+}
+
+#imgBlue
+{
+    float:left;
+    width: 15%;
+    margin-left: 1.5em;
+}
+
+#imgYellow
+{
+    float:left;
+    width: 15%;
+    padding-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+#imgBlack
+{
+    float:left;
+    width: 12%;
+    margin-left: 1.5em;
+}
+
+#imgWhite
+{
+    float:left;
+    width: 15%;
+    margin-left: 1.5em;
+}
+
+#imgGreen
+{
+    float:left;
+    width: 15%;
+    margin-left: 1.5em;
+}
+
+#imgBig_Red
+{
+    float:left;
+    width: 15%;
+    margin-left: 1.5em;
+}
+
+#imgOrange
+{
+    float:left;
+    width: 15%;
+    margin-left: 1.5em;
+}
+
+#imgPink
+{
+    float:left;
+    width: 15%;
+    margin-left: 1.5em;
+}
+
+#imgMighty_Eagle
+{
+    float:left;
+    width: 18%;
+    margin-left: 1.5em;
+}
+
+table
+{
+
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 1em  20% 1em 20%;
+}
+
+.Rrosso
+{
+    text-align: center;
+}
+
+.Rrossa
+{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 0.5em;
+}
+
+.col{
+    text-align: center;
+    padding: 0.3em 0.22em 0.3em 0.22em;
+    font-weight: bold;
+}
+
+.Ucol
+{
+    text-align: center;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+}
+
+#Hcur{
+    text-align: center;
+    padding-top: 0.4em;
+}
+
+.HcurL
+{
+    padding-left: 1.5em;
+    padding-top: 0.3em;
+}
+#footer
+{
+    float:bottom;
+    text-align: center;
     font-style: italic;
-    padding-top: 88%;
+    margin-top: auto;
 }
 .imgValidCode
 {

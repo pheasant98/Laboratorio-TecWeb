@@ -208,38 +208,40 @@ body #storia1
     min-height: 10em;
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-right: 0.5em;
     margin-left: 2em;
     margin-right: 2em;
 }
 
 #protagonisti p{
-    margin-left: 12em;
+    margin-left: 30%;
 }
 
 #imgRed
 {
     float:left;
     width: 25%;
+    padding-left: 0.3em;
 }
 
 #imgBlue
 {
     float:left;
-    width: 25%; 
+    width: 25%;
+    padding-left: 0.3em;
 }
 
 #imgYellow
 {
     float:left;
     width: 25%;
-    padding-right: 1.5em;  
+    padding-left: 0.3em;
 }
 
 #imgBlack
 {
     float:left;
     width: 21%;
-    padding-right: 2.6em;
     padding-left: 0.5em;   
 }
 
@@ -247,49 +249,41 @@ body #storia1
 {
     float:left;
     width: 25%;
-    padding-right: 1em;
 }
 
 #imgGreen
 {
     float:left;
     width: 25%;
-    padding-right: 1em;
+    padding-left: 0.3em;
 }
 
 #imgBig_Red
 {
     float:left;
     width: 25%;
-    padding-right: 1em;
+    padding-left: 0.3em;
 }
 
 #imgOrange
 {
     float:left;
     width: 25%;
-    padding-right: 1em;
+    padding-left: 0.3em;
 }
 
 #imgPink
 {
     float:left;
     width: 25%;
-    padding-right: 1em;
-}
-
-#imgRed
-{
-    float:left;
-    width: 25%;
-    padding-right: 1em;
+    padding-left: 0.3em;
 }
 
 #imgMighty_Eagle
 {
     float:left;
     width: 25%;
-    padding-right: 1em;
+    padding-left: 0.3em;
 }
 
 table
