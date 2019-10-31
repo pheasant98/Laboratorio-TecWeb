@@ -250,3 +250,36 @@ table
 {
     display: none;
 }
+/* versioni*/
+#Hvers
+{
+    text-align: center;
+    padding-bottom: 0.3em;
+}
+
+#versioni dt
+{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+#versioni dd
+{
+    border: 1px solid black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.4em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+#versioni p{
+    page-break-inside: avoid;
+}
