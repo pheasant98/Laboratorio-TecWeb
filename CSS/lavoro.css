@@ -1,369 +1,1036 @@
-*{
-    padding: 0em;
-    margin: 0em;
+@media print {
+    * {
+        padding: 0em;
+        margin: 0em;
+    }
+
+    html, body {
+        margin: auto;
+    }
+
+    body {
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    #header h1 {
+        padding-top: 2em;
+        padding-left: 1em;
+        font-weight: bolder;
+    }
+
+    #header h2 {
+        font-style: italic;
+        padding-left: 1.5em;
+        padding-bottom: 1.3em;
+    }
+
+    abbr {
+        text-decoration: none;
+    }
+
+    .hp a:link:after, a:visited:after {
+        content: " (" attr(href) ")";
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    #breadcrumb {
+        display: none;
+    }
+
+    #imgHomePage {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #news {
+        padding-left: 2.4em;
+        padding-bottom: 1em;
+    }
+
+    #news ul {
+        padding: 0.5em 0em 0.5em 1em;
+    }
+
+    #news li {
+        padding-bottom: 0.3em;
+    }
+
+    #content h1 {
+        padding-left: 1.1em;
+        padding-bottom: 0.5em;
+    }
+
+    .hp {
+        padding-left: 2.5em;
+        padding-bottom: 0.3em;
+    }
+
+    /*protagonisti*/
+    #Hprot {
+        text-align: center;
+        padding-top: 0.7em;
+        padding-bottom: 0.3em;
+    }
+
+    #HprotT {
+        margin-top: 3.5em;
+        text-align: center;
+    }
+
+    #protagonisti dt {
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        margin-left: 6em;
+        margin-right: 6em;
+
+    }
+
+    #protagonisti dd {
+        border: 1px solid black;
+        margin-bottom: 1em;
+        min-height: 5em;
+        text-align: justify;
+        padding-top: 0.6em;
+        padding-bottom: 0.5em;
+        padding-right: 0.5em;
+        margin-left: 6em;
+        margin-right: 6em;
+
+    }
+
+    #protagonisti p {
+        page-break-inside: avoid;
+        margin-left: 25%;
+    }
+
+    #imgRed {
+        float: left;
+        width: 15%;
+        margin-left: 1.5em;
+    }
+
+    #imgBlue {
+        float: left;
+        width: 15%;
+        margin-left: 1.5em;
+    }
+
+    #imgYellow {
+        float: left;
+        width: 15%;
+        padding-right: 1.5em;
+        margin-left: 1.5em;
+    }
+
+    #imgBlack {
+        float: left;
+        width: 12%;
+        margin-left: 1.5em;
+    }
+
+    #imgWhite {
+        float: left;
+        width: 15%;
+        margin-left: 1.5em;
+    }
+
+    #imgGreen {
+        float: left;
+        width: 15%;
+        margin-left: 1.5em;
+    }
+
+    #imgBig_Red {
+        float: left;
+        width: 15%;
+        margin-left: 1.5em;
+    }
+
+    #imgOrange {
+        float: left;
+        width: 15%;
+        margin-left: 1.5em;
+    }
+
+    #imgPink {
+        float: left;
+        width: 15%;
+        margin-left: 1.5em;
+    }
+
+    #imgMighty_Eagle {
+        float: left;
+        width: 18%;
+        margin-left: 1.5em;
+    }
+
+    table {
+
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: 1em 20% 1em 20%;
+    }
+
+    .Rrosso {
+        text-align: center;
+    }
+
+    .Rrossa {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 0.5em;
+    }
+
+    .col {
+        text-align: center;
+        padding: 0.3em 0.22em 0.3em 0.22em;
+        font-weight: bold;
+    }
+
+    .Ucol {
+        text-align: center;
+        padding-right: 0.2em;
+        padding-left: 0.2em;
+    }
+
+    #Hcur {
+        text-align: center;
+        padding-top: 0.4em;
+    }
+
+    .HcurL {
+        padding-left: 1.5em;
+        padding-top: 0.3em;
+    }
+
+    #footer {
+        float: bottom;
+        text-align: center;
+        font-style: italic;
+        margin-top: auto;
+    }
+
+    .imgValidCode {
+        display: none;
+    }
+
+    /* versioni*/
+    #Hvers {
+        text-align: center;
+        padding-bottom: 0.3em;
+    }
+
+    #versioni dt {
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+
+    #versioni dd {
+        border: 1px solid black;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.4em;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+    #versioni p {
+        page-break-inside: avoid;
+    }
+
+    /* storia*/
+    #Hstoria {
+        text-align: center;
+        padding-bottom: 0.1em;
+        padding-top: 0.5em;
+    }
+
+    .sp {
+
+        text-align: justify;
+        padding-left: 1.5em;
+    }
+
+    #imgStoria1 {
+        width: 45%;
+        padding: 0.5em 6em 2em 13em;
+    }
+
+    #imgStoria2 {
+        width: 45%;
+        padding: 0.5em 6em 2em 13em;
+    }
+
+    .classeImg {
+        display: none;
+    }
+
+    /* curiosità*/
+    #Hcur {
+        text-align: center;
+        padding-top: 0.4em;
+    }
+
+    .HcurL {
+        padding-left: 1.5em;
+        padding-top: 0.3em;
+    }
+
+    #imgLand {
+        width: 50%;
+        padding-left: 11em;
+    }
+
+    .cp {
+        padding-left: 2.1em;
+    }
+
+    #imgTorta1 {
+        width: 30%;
+        padding-left: 2.1em;
+    }
+
+    #imgTorta2 {
+        width: 25%;
+        padding-bottom: 4em;
+    }
 }
-html, body
-{
-    max-width: 1024px;
-    margin: auto;
-    min-width: 500px;
+@media screen and (min-width: 1025px) {
+    * {
+        padding: 0em;
+        margin: 0em;
+    }
+
+    html, body {
+        max-width: 1024px;
+        margin: auto;
+        min-width: 500px;
+    }
+
+    body {
+        border: 1px solid #000;
+        font-family: Comic Sans MS, Helvetica, sans-serif;
+    }
+
+    #header {
+        text-align: center;
+        color: #F3C42B;
+        background-color: #A80022;
+        padding: 1em;
+        font-weight: bolder;
+        /*  grid-area: h;*/
+    }
+
+    #breadcrumb {
+        color: #F3C42B;
+        background-color: rgba(0, 0, 0, 1);
+        font-weight: bold;
+        padding: 0.5em 0.1em 0.5em 1em;
+        font-size: 1.1em;
+        /* grid-area: b;*/
+    }
+
+    #currentLink {
+        background-image: url("../images/red.png");
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding-left: 1.5em;
+        background-size: 1.4em;
+    }
+
+    #menu {
+        float: left;
+        width: 20%;
+        padding: 0.8em;
+        font-size: 1.3em;
+        overflow: hidden;
+        /* grid-area: m;*/
+    }
+
+    #menu ul {
+        padding: 0.2em;
+        list-style-type: none;
+    }
+
+    #menu li {
+        padding-bottom: 0.2em;
+    }
+
+    #content {
+        border-left: 1px solid #000;
+        margin-left: 25%;
+        padding: 1em 1.2em 0.5em 1.2em;
+        /* grid-area: c;*/
+    }
+
+    #Hhome {
+        padding-top: 0.6em;
+        padding-left: 1.4em;
+    }
+
+    .hp {
+        font-size: 1.1em;
+        padding: 0.4em 3em 0.4em 2.0em;
+    }
+
+    #imgHomePage {
+        padding-left: 5em;
+    }
+
+    #news {
+        float: right;
+        border: 1px dashed #000;
+        width: 30%;
+        /* grid-area: n;*/
+    }
+
+    #news h2 {
+        margin: 0.2em;
+        padding: 0.1em;
+        background-color: #F3C42B;
+        text-align: left;
+    }
+
+    #news ul {
+        padding-left: 1.7em;
+    }
+
+    #Hstoria {
+        text-align: center;
+        padding-bottom: 0.1em;
+        padding-top: 0.5em;
+    }
+
+    .sp {
+        padding-left: 1.5em;
+    }
+
+    #imgStoria1 {
+        width: 45%;
+        padding: 0.5em 6em 2em 13em;
+    }
+
+    #imgStoria2 {
+        width: 45%;
+        padding: 0.5em 6em 2em 13em;
+    }
+
+    #Hvers {
+        text-align: center;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
+
+    #versioni dt {
+        border: 1px solid black;
+        background-color: #A80022;
+        color: white;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+
+    #versioni dd {
+        border: 1px solid black;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.4em;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+    #Hprot {
+        text-align: center;
+        padding-top: 0.7em;
+        padding-bottom: 0.3em;
+    }
+
+    #HprotT {
+        text-align: center;
+    }
+
+    #protagonisti dt {
+        border: 1px solid black;
+        background-color: #A80022;
+        color: white;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    #protagonisti dd {
+        border: 1px solid black;
+        margin-bottom: 1em;
+        min-height: 10em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 0.5em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    #protagonisti p {
+        margin-left: 30%;
+    }
+
+    #imgRed {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgBlue {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgYellow {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgBlack {
+        float: left;
+        width: 21%;
+        padding-left: 0.5em;
+    }
+
+    #imgWhite {
+        float: left;
+        width: 25%;
+    }
+
+    #imgGreen {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgBig_Red {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgOrange {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgPink {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgMighty_Eagle {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: 1em 5em 1em 5em;
+    }
+
+    .Rrosso {
+        background-color: #A80022;
+        color: white;
+        text-align: center;
+    }
+
+    .Rrossa {
+        background-color: #A80022;
+        color: white;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 0.5em;
+    }
+
+    .col {
+        text-align: center;
+        padding: 0.3em 0.22em 0.3em 0.22em;
+        font-weight: bold;
+    }
+
+    .Ucol {
+        text-align: center;
+        padding-right: 0.2em;
+        padding-left: 0.2em;
+    }
+
+    #Hcur {
+        text-align: center;
+        padding-top: 0.4em;
+    }
+
+    .HcurL {
+        padding-left: 1.5em;
+        padding-top: 0.3em;
+    }
+
+    #imgLand {
+        width: 50%;
+        padding-left: 11em;
+    }
+
+    .cp {
+        padding-left: 2.1em;
+    }
+
+    #imgTorta1 {
+        width: 30%;
+        padding-left: 2.1em;
+    }
+
+    #imgTorta2 {
+        width: 25%;
+        padding-bottom: 4em;
+    }
+
+    #footer {
+        clear: both;
+        border-top: 1px solid #000;
+        text-align: center;
+        padding-top: 0.4em;
+        padding-bottom: 0.2em;
+        height: 2.5em;
+        font-style: italic;
+        font-weight: bold;
+        /* grid-area: f;*/
+    }
 }
 
-body{
-    border: 1px solid #000;
-    font-family: Comic Sans MS, Helvetica, sans-serif;
-}
-/*
-body#homepage
-{
-    display:grid;
-    grid-template-columns: 1fr 2f 1fr; *//**una parte al menu 2 parti al contenuto e una parte alle news**//*
-    grid-template-areas:
-    "h h h"
-    "b b b"
-    "m c n"
-    "f f f";
-}*/
-/*
-body #storia1
-{
-    display:grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas:
-    "h h"
-    "b b"
-    "m c"
-    "f f";
+@media only screen and (max-width: 1024px){
+    * {
+        padding: 0em;
+        margin: 0em;
+    }
 
-}*/
+    html, body {
+        max-width: 1024px;
+        margin: auto;
+        min-width: 500px;
+    }
 
-#header{
-    text-align: center;
-    color: #F3C42B;
-    background-color: #A80022;
-    padding: 1em;
-    font-weight: bolder;
-  /*  grid-area: h;*/
-}
+    body {
+        border: 1px solid #000;
+        font-family: Comic Sans MS, Helvetica, sans-serif;
+    }
 
-#breadcrumb{
-    color: #F3C42B;
-    background-color: rgba(0, 0, 0, 1);
-    font-weight: bold;
-    padding: 0.5em 0.1em 0.5em 1em;
-    font-size: 1.1em;
-   /* grid-area: b;*/
-}
+    body #homepage
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+                "a a a"
+                "b b b"
+                "c c c"
+                "d d d"
+                "e e e"
+                "f f f";
+    }
 
-#currentLink
-{
-    background-image: url("../images/red.png");
-    background-position: left center;
-    background-repeat: no-repeat;
-    padding-left: 1.5em;
-    background-size: 1.4em;
-}
+    #header {
+        text-align: center;
+        color: #F3C42B;
+        background-color: #A80022;
+        padding: 0.5em;
+        font-weight: bolder;
+        grid-area: a;
+    }
 
-#menu{
-    float: left;
-    width:20%;
-    padding: 0.8em;
-    font-size: 1.3em;
-    overflow: hidden;
-   /* grid-area: m;*/
-}
+    #header h1 {
+        padding-top: 2em;
+        padding-left: 1em;
+        font-weight: bolder;
+    }
 
-#menu ul{
-    padding:0.2em;
-    list-style-type:none;
-}
+    #header h2 {
+        font-style: italic;
+        padding-left: 1.5em;
+        padding-bottom: 1.3em;
+    }
 
-#menu li{
-    padding-bottom: 0.2em;
-}
+    #breadcrumb {
+        color: #F3C42B;
+        background-color: rgba(0, 0, 0, 1);
+        font-weight: bold;
+        padding: 0.5em 0.1em 0.5em 1em;
+        font-size: 0.7em;
+        grid-area: b;
+    }
 
-#content
-{
-    border-left: 1px solid #000;
-    margin-left: 25%;
-    padding:  1em 1.2em 0.5em 1.2em;
-   /* grid-area: c;*/
-}
-#Hhome
-{
-    padding-top: 0.6em;
-    padding-left: 1.4em;
-}
+    #menu {
+        padding-bottom: 0.6em;
+        font-size: 2em;
+        overflow: hidden;
+        background-color: #F3C42B;
+        grid-area: c;
+    }
 
-.hp
-{
-    font-size:1.1em;
-    padding: 0.4em 3em 0.4em 2.0em;
-}
+    #menu ul {
+        padding: 1em;
+        list-style-type: none;
+    }
 
-#imgHomePage
-{
-    padding-left: 5em;
-}
-#news
-{
-    float: right;
-    border: 1px dashed #000;
-    width:30%;
-   /* grid-area: n;*/
-}
+    #menu li {
+        padding-left: 1.1em;
+        float: left;
+    }
 
-#news h2{
-    margin: 0.2em;
-    padding: 0.1em;
-    background-color: #F3C42B;
-    text-align: left;
-}
+    #news
+    {
+        border: 1px dashed #000;
+        grid-area: d;
+    }
 
-#news ul
-{
-    padding-left: 1.7em;
-}
+    #news h2{
+        margin: 0.2em;
+        padding: 0.1em;
+        background-color: #F3C42B;
+        text-align: left;
+    }
 
-#Hstoria
-{
-    text-align: center;
-    padding-bottom: 0.1em;
-    padding-top: 0.5em;
-}
+    #news ul
+    {
+        padding-right: 0.5em;
+        padding-left: 2.8em;
+    }
 
-.sp{
-    padding-left: 1.5em;
-}
+    #content
+    {
+        border-top: 1px solid #000;
+        padding:  1em 1.2em 0.5em 1.2em;
+        grid-area: e;
+    }
+    #Hhome
+    {
+        padding-top: 0.6em;
+        padding-left: 0.4em;
+    }
 
-#imgStoria1
-{
-    width: 45%;
-    padding: 0.5em 6em 2em 13em;
-}
+    .hp
+    {
+        font-size:1.1em;
+        padding: 0.4em 3em 0.4em 2.0em;
+    }
 
-#imgStoria2
-{
-    width: 45%;
-    padding: 0.5em 6em 2em 13em;
-}
+    #imgHomePage
+    {
+        width: 38%;
+        padding-left: 33%;
+    }
 
-#Hvers
-{
-    text-align: center;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-}
+    body #storia
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+                "a a a"
+                "b b b"
+                "c c c"
+                "d d d"
+                "f f f";
+    }
 
-#versioni dt
-{
-    border: 1px solid black;
-    background-color: #A80022;
-    color: white;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
-    padding-left: 0.5em;
-    margin-right: 2em;
-    margin-left: 2em;
-}
+    #storia #content
+    {
+        grid-area: d;
+    }
+    #Hstoria {
+        text-align: center;
+        padding-bottom: 0.1em;
+        padding-top: 0.5em;
+    }
 
-#versioni dd
-{
-    border: 1px solid black;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.4em;
-    margin-right: 2em;
-    margin-left: 2em;
-    margin-bottom: 1em;
-}
+    .sp {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        text-align: justify;
+    }
 
-#Hprot
-{
-    text-align: center;
-    padding-top: 0.7em;
-    padding-bottom: 0.3em;
-}
+    #imgStoria1 {
+        width: 45%;
+        padding: 0.5em 3em 2em 17em;
+    }
 
-#HprotT
-{
-    text-align: center;
-}
-#protagonisti dt
-{
-    border: 1px solid black;
-    background-color: #A80022;
-    color: white;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
-    padding-left: 0.5em;
-    margin-left: 2em;
-    margin-right: 2em;
-}
+    #imgStoria2 {
+        width: 45%;
+        padding: 0.5em 3em 2em 17em;
+    }
 
-#protagonisti dd
-{
-    border: 1px solid black;
-    margin-bottom: 1em;
-    min-height: 10em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-right: 0.5em;
-    margin-left: 2em;
-    margin-right: 2em;
-}
+    body #versione
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+                "a a a"
+                "b b b"
+                "c c c"
+                "d d d"
+                "f f f";
+    }
 
-#protagonisti p{
-    margin-left: 30%;
-}
+    #versione #content
+    {
+        grid-area: d;
+    }
+    #Hvers {
+        text-align: center;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
 
-#imgRed
-{
-    float:left;
-    width: 25%;
-    padding-left: 0.3em;
-}
+    #versioni dt {
+        border: 1px solid black;
+        background-color: #A80022;
+        color: white;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        margin-right: 2em;
+        margin-left: 2em;
+    }
 
-#imgBlue
-{
-    float:left;
-    width: 25%;
-    padding-left: 0.3em;
-}
+    #versioni dd {
+        border: 1px solid black;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.4em;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
 
-#imgYellow
-{
-    float:left;
-    width: 25%;
-    padding-left: 0.3em;
-}
+    body #curiosita
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+                "a a a"
+                "b b b"
+                "c c c"
+                "d d d"
+                "f f f";
+    }
 
-#imgBlack
-{
-    float:left;
-    width: 21%;
-    padding-left: 0.5em;   
-}
+    #curiosita #content
+    {
+        grid-area: d;
+    }
+    #Hcur {
+        text-align: center;
+        padding-top: 0.4em;
+    }
 
-#imgWhite
-{
-    float:left;
-    width: 25%;
-}
+    .HcurL {
+        padding-left: 1.5em;
+        padding-top: 0.3em;
+    }
 
-#imgGreen
-{
-    float:left;
-    width: 25%;
-    padding-left: 0.3em;
-}
+    #imgLand {
+        width: 50%;
+        padding-left: 27%;
+    }
 
-#imgBig_Red
-{
-    float:left;
-    width: 25%;
-    padding-left: 0.3em;
-}
+    .cp {
+        padding-left: 2.1em;
+    }
 
-#imgOrange
-{
-    float:left;
-    width: 25%;
-    padding-left: 0.3em;
-}
+    #imgTorta1 {
+        width: 30%;
+        padding-left: 2.1em;
+    }
 
-#imgPink
-{
-    float:left;
-    width: 25%;
-    padding-left: 0.3em;
-}
+    #imgTorta2 {
+        width: 25%;
+        padding-bottom: 4em;
+    }
 
-#imgMighty_Eagle
-{
-    float:left;
-    width: 25%;
-    padding-left: 0.3em;
-}
+    body #protagonisti1
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+                "a a a"
+                "b b b"
+                "c c c"
+                "d d d"
+                "f f f";
+    }
 
-table
-{
-    border: 1px solid black;
-    border-collapse: collapse;
-    margin: 1em 5em 1em 5em;
-}
+    #protagonisti1 #content
+    {
+        grid-area: d;
+    }
 
-.Rrosso
-{
-    background-color: #A80022;
-    color: white;
-    text-align: center;
-}
+    #Hprot {
+        text-align: center;
+        padding-top: 0.7em;
+        padding-bottom: 0.3em;
+    }
 
-.Rrossa
-{
-    background-color: #A80022;
-    color: white;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 0.5em;
-}
+    #HprotT {
+        text-align: center;
+    }
 
-.col{
-    text-align: center;
-    padding: 0.3em 0.22em 0.3em 0.22em;
-    font-weight: bold;
-}
+    #protagonisti dt {
+        border: 1px solid black;
+        background-color: #A80022;
+        color: white;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
 
-.Ucol
-{
-    text-align: center;
-    padding-right: 0.2em;
-    padding-left: 0.2em;
-}
+    #protagonisti dd {
+        border: 1px solid black;
+        margin-bottom: 1em;
+        min-height: 10em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 0.5em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
 
-#Hcur{
-    text-align: center;
-    padding-top: 0.4em;
-}
+    #protagonisti p {
+        margin-left: 30%;
+    }
 
-.HcurL
-{
-    padding-left: 1.5em;
-    padding-top: 0.3em;
-}
+    #imgRed {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
 
-#imgLand
-{
-    width: 50%;
-    padding-left: 11em;
-}
+    #imgBlue {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
 
-.cp
-{
-    padding-left: 2.1em;
-}
-#imgTorta1
-{
-    width: 30%;
-    padding-left: 2.1em;
-}
+    #imgYellow {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
 
-#imgTorta2
-{
-    width: 25%;
-    padding-bottom: 4em;
-}
+    #imgBlack {
+        float: left;
+        width: 21%;
+        padding-left: 0.5em;
+    }
 
-#footer
-{
-    clear:both;
-    border-top: 1px solid #000;
-    text-align: center;
-    padding-top: 0.4em;
-    padding-bottom: 0.2em;
-    height: 2.5em;
-    font-style: italic;
-    font-weight: bold;
-   /* grid-area: f;*/
+    #imgWhite {
+        float: left;
+        width: 25%;
+    }
+
+    #imgGreen {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgBig_Red {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgOrange {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgPink {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    #imgMighty_Eagle {
+        float: left;
+        width: 25%;
+        padding-left: 0.3em;
+    }
+
+    table {
+        height: 40em;
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: 1em 5em 1em 5em;
+        font-size: 1.5em;
+    }
+
+    .Rrosso {
+        background-color: #A80022;
+        color: white;
+        text-align: center;
+    }
+
+    .Rrossa {
+        background-color: #A80022;
+        color: white;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 0.5em;
+    }
+
+    .col {
+        text-align: center;
+        padding: 0.3em 0.22em 0.3em 0.22em;
+        font-weight: bold;
+    }
+
+    .Ucol {
+        text-align: center;
+        padding-right: 0.2em;
+        padding-left: 0.2em;
+    }
+    #footer
+    {
+        clear:both;
+        border-top: 1px solid #000;
+        text-align: center;
+        padding-top: 0.4em;
+        padding-bottom: 0.2em;
+        height: 2.5em;
+        font-style: italic;
+        font-weight: bold;
+        grid-area: f;
+    }
 }
