@@ -629,7 +629,7 @@
     }
 }
 
-@media only screen and (max-width: 1024px){
+@media screen and (max-width:1024px), only screen and (max-device-width:1024px){
     * {
         padding: 0em;
         margin: 0em;
